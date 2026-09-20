@@ -1,50 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta charset="utf-8" />
-<link rel="icon" href="asset/TTP_Favicon.png">
-    <title>The Traingates Project's</title>
-<link rel="stylesheet" href="globals.css">
-<link rel="stylesheet" href="styleguide.css">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Traingates Project's</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="styleguide.css">
+  <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-<div class="home-page" ><div class="cover" ><img class="cover-image" src="asset/cover-2.png" />
-<div class="dimmer" ></div>
-<div class="navigation-footer" ><div class="items" ><div class="text-wrapper" >Topic</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div></div>
-<div class="items-2" ><div class="text-wrapper" >Topic</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div></div>
-<div class="items-3" ><div class="text-wrapper" >Topic</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div>
-<div class="div" >Page</div></div>
-<div class="text-wrapper-2" >Site name</div>
-<div class="social-icons" ><img src="asset/icon-23.svg" /><img src="asset/icon-26.svg" /><img src="asset/icon-29.svg" /><img src="asset/icon-32.svg" /></div>
-<img class="divider" src="asset/divider-33.svg" /></div>
-<div class="navigation" ><img class="navigation-image" src="asset/navigation-image-35.png" />
-<div class="closed-profile" ><div class="body" ><div class="body-2" ></div>
-<div class="body-3" ></div>
-<div class="body-4" ></div></div>
-<div class="log-in" ><div class="text-wrapper-3" >Sign In</div></div>
-<img class="user-icon" src="asset/union-1-44.svg" /></div>
-<div class="site-logo" ><img class="color-TTP" src="asset/color-ttp-47.png" /></div></div>
-<div class="website-title" ><div class="page-title" ><div class="header" >The Traingates Project's</div>
-<p class="subheader" >A member of Kalen Rewards.</p></div></div>
-<div class="body-5" ><div class="spacer-top" ></div>
-<div class="page-buttons" ><button class="button" ><div class="button-2" >Information</div></button>
-<button class="button-3" ><div class="button-2" >Membership</div></button>
-<button class="button-4" ><div class="button-2" >Affiliation</div></button>
-<button class="button-5" ><div class="button-2" >Projects</div></button>
-<button class="button-6" ><div class="button-2" >Portfolio</div></button>
-<button class="button-7" ><div class="button-8" >Products</div></button></div>
-<div class="info-box" ><div class="body-6" ></div>
-<p class="text" >Choose a page above to view more information about each services.</p></div>
-<div class="spacer-bottom" ></div></div></div>
+  <div class="home-page">
+    <!-- Navigation -->
+    <nav class="navigation">
+      <img src="asset/navigation-image-35.png" alt="navigation" class="navigation-image">
+      <div class="nav-content">
+        <div class="site-logo">
+          <img src="asset/color-ttp-47.png" alt="logo">
+        </div>
+        <div class="auth-section">
+          <button class="sign-in-btn">Sign In</button>
+          <img src="asset/union-1-44.svg" alt="user" class="user-icon">
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cover Section -->
+    <section class="cover">
+      <img src="asset/cover-2.png" alt="cover" class="cover-image">
+      <div class="dimmer"></div>
+      <div class="author">Photographed by: Kyle Lau</div>
+    </section>
+
+    <!-- Footer Navigation -->
+    <footer class="navigation-footer">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="footer-title">Topic</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Topic</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+        </div>
+        <div class="footer-column">
+          <div class="footer-title">Topic</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+          <div class="footer-link">Page</div>
+        </div>
+        <div class="footer-branding">
+          <div class="site-name">Site name</div>
+          <div class="social-icons">
+            <img src="asset/icon-23.svg" alt="social">
+            <img src="asset/icon-26.svg" alt="social">
+            <img src="asset/icon-29.svg" alt="social">
+            <img src="asset/icon-32.svg" alt="social">
+          </div>
+        </div>
+      </div>
+      <img src="asset/divider-33.svg" alt="divider" class="divider">
+    </footer>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <div class="title-section">
+        <h1 class="header">The Traingates Project's</h1>
+        <p class="subheader">A member of Kalen Rewards.</p>
+      </div>
+
+      <div class="buttons-section">
+        <button class="btn">Information</button>
+        <button class="btn">Membership</button>
+        <button class="btn">Affiliation</button>
+        <button class="btn">Projects</button>
+        <button class="btn">Portfolio</button>
+        <button class="btn">Products</button>
+      </div>
+
+      <div class="info-box">
+        <p>Choose a page above to view more information about each services.</p>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
