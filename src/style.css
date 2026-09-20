@@ -1,16 +1,16 @@
 .home-page {
   background-color: #ffffff;
   width: 100%;
-  min-width: 1440px;
   min-height: 1574px;
   position: relative;
+  overflow-x: hidden;
 }
 
 .home-page .cover {
   position: absolute;
   top: 164px;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 718px;
   overflow: hidden;
   background-image: url(./asset/cover-2.png);
@@ -22,16 +22,16 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 718px;
-  aspect-ratio: 0.75;
+  object-fit: cover;
 }
 
 .home-page .dimmer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 1440px;
+  width: 100%;
   height: 720px;
   background-color: #00000026;
 }
@@ -59,6 +59,8 @@
   background-color: #ffffff;
   position: absolute;
   left: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .home-page .items {
@@ -179,9 +181,9 @@
 
 .home-page .navigation-image {
   top: 0;
-  width: 1440px;
+  width: 100%;
   height: 164px;
-  aspect-ratio: 0.75;
+  object-fit: cover;
   position: absolute;
   left: 0;
 }
@@ -341,10 +343,12 @@
   position: absolute;
   top: 882px;
   left: 0;
-  width: 1440px;
-  height: 350px;
+  width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .home-page .spacer-top {
@@ -353,25 +357,28 @@
 }
 
 .home-page .page-buttons {
-  margin-left: 57px;
-  width: 1326px;
-  height: 153px;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
   position: relative;
   margin-top: 42px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
 }
 
 .home-page .button {
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -395,14 +402,13 @@
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 99px;
-  left: 0;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -414,14 +420,13 @@
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 0;
-  left: 926px;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -433,14 +438,13 @@
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 99px;
-  left: 926px;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -452,14 +456,13 @@
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 99px;
-  left: 463px;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -471,14 +474,13 @@
   all: unset;
   box-sizing: border-box;
   display: flex;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   align-items: center;
   justify-content: center;
   gap: var(--size-space-200);
   padding: var(--size-space-300);
-  position: absolute;
-  top: 0;
-  left: 463px;
+  position: relative;
   background-color: #83ada6;
   border-radius: var(--size-radius-200);
   overflow: hidden;
@@ -500,9 +502,9 @@
 }
 
 .home-page .info-box {
-  margin-left: 236px;
-  width: 1002px;
-  height: 60px;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
   position: relative;
   margin-top: 49px;
 }
@@ -511,7 +513,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 1000px;
+  width: 100%;
   height: 60px;
   background-color: #f7f7f7;
   border-radius: 25px;
@@ -521,7 +523,7 @@
   position: absolute;
   top: 11px;
   left: 0;
-  width: 1000px;
+  width: 100%;
   height: 38px;
   display: flex;
   align-items: center;
